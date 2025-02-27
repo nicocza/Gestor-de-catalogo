@@ -21,11 +21,9 @@ namespace Control
 
                 while(datos.Lector.Read())
                 {
-                    Marca aux = new Marca
-                    {
-                        Id = (int)datos.Lector["Id"],
-                        Descripcion = (string)datos.Lector["Descripcion"],
-                    };
+                    Marca aux = new Marca();
+                    aux.Id = (int)datos.Lector["Id"];
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
 
                     lista.Add(aux);
                 }

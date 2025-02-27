@@ -53,11 +53,11 @@
             // 
             this.lblCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblCodigo.Location = new System.Drawing.Point(87, 64);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(119, 34);
+            this.lblCodigo.Size = new System.Drawing.Size(104, 34);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             this.lblCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,11 +66,11 @@
             // 
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblNombre.Location = new System.Drawing.Point(87, 118);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(125, 34);
+            this.lblNombre.Size = new System.Drawing.Size(117, 34);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,11 +79,11 @@
             // 
             this.lblMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblMarca.Location = new System.Drawing.Point(87, 177);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(104, 34);
+            this.lblMarca.Size = new System.Drawing.Size(97, 34);
             this.lblMarca.TabIndex = 2;
             this.lblMarca.Text = "Marca";
             this.lblMarca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,11 +92,11 @@
             // 
             this.lblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblCategoria.Location = new System.Drawing.Point(87, 234);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(155, 34);
+            this.lblCategoria.Size = new System.Drawing.Size(139, 34);
             this.lblCategoria.TabIndex = 3;
             this.lblCategoria.Text = "Categoría";
             this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,11 +105,11 @@
             // 
             this.lblUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUrlImagen.AutoSize = true;
-            this.lblUrlImagen.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUrlImagen.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUrlImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblUrlImagen.Location = new System.Drawing.Point(87, 290);
             this.lblUrlImagen.Name = "lblUrlImagen";
-            this.lblUrlImagen.Size = new System.Drawing.Size(159, 34);
+            this.lblUrlImagen.Size = new System.Drawing.Size(163, 34);
             this.lblUrlImagen.TabIndex = 4;
             this.lblUrlImagen.Text = "Url Imagen";
             this.lblUrlImagen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -118,11 +118,11 @@
             // 
             this.lblPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblPrecio.Location = new System.Drawing.Point(87, 347);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(101, 34);
+            this.lblPrecio.Size = new System.Drawing.Size(93, 34);
             this.lblPrecio.TabIndex = 5;
             this.lblPrecio.Text = "Precio";
             this.lblPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,11 +131,11 @@
             // 
             this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.lblDescripcion.Location = new System.Drawing.Point(87, 409);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(177, 34);
+            this.lblDescripcion.Size = new System.Drawing.Size(162, 34);
             this.lblDescripcion.TabIndex = 6;
             this.lblDescripcion.Text = "Descripción";
             this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,48 +143,53 @@
             // txtCodigo
             // 
             this.txtCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(325, 71);
+            this.txtCodigo.Location = new System.Drawing.Point(325, 66);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(269, 32);
-            this.txtCodigo.TabIndex = 7;
+            this.txtCodigo.TabIndex = 0;
             // 
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(325, 125);
+            this.txtNombre.Location = new System.Drawing.Point(325, 120);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(269, 32);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // TxtUrlImagen
             // 
             this.TxtUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtUrlImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUrlImagen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUrlImagen.Location = new System.Drawing.Point(325, 297);
+            this.TxtUrlImagen.Location = new System.Drawing.Point(326, 292);
             this.TxtUrlImagen.Name = "TxtUrlImagen";
             this.TxtUrlImagen.Size = new System.Drawing.Size(269, 32);
-            this.TxtUrlImagen.TabIndex = 9;
+            this.TxtUrlImagen.TabIndex = 4;
             this.TxtUrlImagen.Leave += new System.EventHandler(this.TxtUrlImagen_Leave);
             // 
             // txtPrecio
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(325, 354);
+            this.txtPrecio.Location = new System.Drawing.Point(326, 349);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(269, 32);
-            this.txtPrecio.TabIndex = 10;
+            this.txtPrecio.TabIndex = 5;
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(94, 460);
+            this.txtDescripcion.Location = new System.Drawing.Point(93, 460);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(501, 106);
-            this.txtDescripcion.TabIndex = 11;
+            this.txtDescripcion.Size = new System.Drawing.Size(502, 106);
+            this.txtDescripcion.TabIndex = 6;
             // 
             // cboxMarca
             // 
@@ -194,10 +199,10 @@
             this.cboxMarca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.cboxMarca.FormattingEnabled = true;
-            this.cboxMarca.Location = new System.Drawing.Point(325, 184);
+            this.cboxMarca.Location = new System.Drawing.Point(325, 180);
             this.cboxMarca.Name = "cboxMarca";
             this.cboxMarca.Size = new System.Drawing.Size(269, 31);
-            this.cboxMarca.TabIndex = 12;
+            this.cboxMarca.TabIndex = 2;
             // 
             // cboxCategoria
             // 
@@ -207,10 +212,10 @@
             this.cboxCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.cboxCategoria.FormattingEnabled = true;
-            this.cboxCategoria.Location = new System.Drawing.Point(325, 241);
+            this.cboxCategoria.Location = new System.Drawing.Point(326, 237);
             this.cboxCategoria.Name = "cboxCategoria";
             this.cboxCategoria.Size = new System.Drawing.Size(269, 31);
-            this.cboxCategoria.TabIndex = 13;
+            this.cboxCategoria.TabIndex = 3;
             // 
             // pboxArticulo
             // 
@@ -229,12 +234,12 @@
             this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.btnAceptar.FlatAppearance.BorderSize = 2;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.btnAceptar.Location = new System.Drawing.Point(164, 604);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(156, 54);
-            this.btnAceptar.TabIndex = 15;
+            this.btnAceptar.TabIndex = 7;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -244,12 +249,12 @@
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
             this.btnCancelar.Location = new System.Drawing.Point(360, 604);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(156, 54);
-            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
