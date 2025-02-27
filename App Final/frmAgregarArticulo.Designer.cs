@@ -46,6 +46,10 @@
             this.pboxArticulo = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAgregarImagen = new System.Windows.Forms.Button();
+            this.lblCodigoError = new System.Windows.Forms.Label();
+            this.lblNombreError = new System.Windows.Forms.Label();
+            this.lblPrecioError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArticulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,7 +183,7 @@
             this.txtPrecio.Location = new System.Drawing.Point(326, 349);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(269, 32);
-            this.txtPrecio.TabIndex = 5;
+            this.txtPrecio.TabIndex = 6;
             // 
             // txtDescripcion
             // 
@@ -189,25 +193,25 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(502, 106);
-            this.txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.TabIndex = 7;
             // 
             // cboxMarca
             // 
             this.cboxMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxMarca.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.cboxMarca.BackColor = System.Drawing.Color.SteelBlue;
             this.cboxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxMarca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.cboxMarca.FormattingEnabled = true;
-            this.cboxMarca.Location = new System.Drawing.Point(325, 180);
+            this.cboxMarca.Location = new System.Drawing.Point(326, 180);
             this.cboxMarca.Name = "cboxMarca";
-            this.cboxMarca.Size = new System.Drawing.Size(269, 31);
+            this.cboxMarca.Size = new System.Drawing.Size(268, 31);
             this.cboxMarca.TabIndex = 2;
             // 
             // cboxCategoria
             // 
             this.cboxCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxCategoria.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.cboxCategoria.BackColor = System.Drawing.Color.SteelBlue;
             this.cboxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
@@ -220,7 +224,7 @@
             // pboxArticulo
             // 
             this.pboxArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pboxArticulo.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pboxArticulo.BackColor = System.Drawing.SystemColors.Window;
             this.pboxArticulo.Location = new System.Drawing.Point(634, 71);
             this.pboxArticulo.Name = "pboxArticulo";
             this.pboxArticulo.Size = new System.Drawing.Size(322, 495);
@@ -239,7 +243,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(164, 604);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(156, 54);
-            this.btnAceptar.TabIndex = 7;
+            this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -254,10 +258,55 @@
             this.btnCancelar.Location = new System.Drawing.Point(360, 604);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(156, 54);
-            this.btnCancelar.TabIndex = 8;
+            this.btnCancelar.TabIndex = 9;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAgregarImagen
+            // 
+            this.btnAgregarImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarImagen.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarImagen.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnAgregarImagen.Location = new System.Drawing.Point(600, 292);
+            this.btnAgregarImagen.Name = "btnAgregarImagen";
+            this.btnAgregarImagen.Size = new System.Drawing.Size(28, 32);
+            this.btnAgregarImagen.TabIndex = 5;
+            this.btnAgregarImagen.Text = "+";
+            this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
+            // 
+            // lblCodigoError
+            // 
+            this.lblCodigoError.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCodigoError.AutoSize = true;
+            this.lblCodigoError.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoError.ForeColor = System.Drawing.Color.Red;
+            this.lblCodigoError.Location = new System.Drawing.Point(319, 100);
+            this.lblCodigoError.Name = "lblCodigoError";
+            this.lblCodigoError.Size = new System.Drawing.Size(0, 20);
+            this.lblCodigoError.TabIndex = 16;
+            // 
+            // lblNombreError
+            // 
+            this.lblNombreError.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblNombreError.AutoSize = true;
+            this.lblNombreError.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreError.ForeColor = System.Drawing.Color.Red;
+            this.lblNombreError.Location = new System.Drawing.Point(322, 155);
+            this.lblNombreError.Name = "lblNombreError";
+            this.lblNombreError.Size = new System.Drawing.Size(0, 20);
+            this.lblNombreError.TabIndex = 17;
+            // 
+            // lblPrecioError
+            // 
+            this.lblPrecioError.AutoSize = true;
+            this.lblPrecioError.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioError.ForeColor = System.Drawing.Color.Red;
+            this.lblPrecioError.Location = new System.Drawing.Point(298, 392);
+            this.lblPrecioError.Name = "lblPrecioError";
+            this.lblPrecioError.Size = new System.Drawing.Size(0, 20);
+            this.lblPrecioError.TabIndex = 18;
             // 
             // frmAgregarArticulo
             // 
@@ -265,6 +314,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(986, 688);
+            this.Controls.Add(this.lblPrecioError);
+            this.Controls.Add(this.lblNombreError);
+            this.Controls.Add(this.lblCodigoError);
+            this.Controls.Add(this.btnAgregarImagen);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.pboxArticulo);
@@ -315,5 +368,9 @@
         private System.Windows.Forms.PictureBox pboxArticulo;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAgregarImagen;
+        private System.Windows.Forms.Label lblCodigoError;
+        private System.Windows.Forms.Label lblNombreError;
+        private System.Windows.Forms.Label lblPrecioError;
     }
 }

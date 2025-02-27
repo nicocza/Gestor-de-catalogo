@@ -14,22 +14,13 @@ namespace Control
         public List<Articulo> listar()
         {
             List<Articulo> lista = new List<Articulo>();
-            //SqlConnection conexion = new SqlConnection();
-            //SqlCommand comando = new SqlCommand();
-            //SqlDataReader lector;
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
-                //conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_DB; integrated security=true";
-                //comando.CommandType = System.Data.CommandType.Text;
-                //comando.CommandText = "SELECT Codigo, Nombre, A.Descripcion, ImagenUrl, Precio, C.Descripcion as Categoria, M.Descripcion as Marca, A.IdMarca, A.IdCategoria, A.Id FROM ARTICULOS A, CATEGORIAS C, MARCAS M WHERE C.Id = A.IdCategoria And M.Id = A.IdMarca";
-                //comando.Connection = conexion;
                 datos.setearConsulta("SELECT Codigo, Nombre, A.Descripcion, ImagenUrl, Precio, C.Descripcion as Categoria, M.Descripcion as Marca, A.IdMarca, A.IdCategoria, A.Id FROM ARTICULOS A, CATEGORIAS C, MARCAS M WHERE C.Id = A.IdCategoria And M.Id = A.IdMarca");
                 datos.ejecutarLectura();
-                //conexion.Open();
-                //lector = comando.ExecuteReader();
-
+               
                 while(datos.Lector.Read())
                 {
                     Articulo aux = new Articulo();
@@ -49,13 +40,11 @@ namespace Control
 
                     lista.Add(aux);
                 }
-
-                //conexion.Close();
                 return lista;
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al obtener los artículos de la base de datos.", ex);
             }
             finally
             {
@@ -105,7 +94,7 @@ namespace Control
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al modificar el artículo en la base de datos.", ex);
             }
             finally
             {
@@ -180,6 +169,9 @@ namespace Control
                                 break;
                         }
                         break;
+                    default:
+                        throw new Exception("No se reconoce el campo de búsqueda.");
+
                 }
                 datos.setearConsulta(consulta);
                 datos.ejecutarLectura();
@@ -206,7 +198,7 @@ namespace Control
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("Error al filtrar los artículos en la base de datos.", ex);
             }
         }
     }

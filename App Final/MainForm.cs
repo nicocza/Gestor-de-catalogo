@@ -24,9 +24,9 @@ namespace App_Final
         private void MainForm_Load(object sender, EventArgs e)
         {
             cargar();
-            cboxCampo.Items.Add("Codigo");
+            cboxCampo.Items.Add("Código");
             cboxCampo.Items.Add("Nombre");
-            cboxCampo.Items.Add("Descripcion");
+            cboxCampo.Items.Add("Descripción");
         }
 
         private void dgvArticulo_SelectionChanged(object sender, EventArgs e)
@@ -82,6 +82,11 @@ namespace App_Final
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if(dgvArticulo.CurrentRow == null)
+            {
+                MessageBox.Show("No hay artículo seleccionado para modificar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Articulo seleccionado;
             seleccionado = (Articulo)dgvArticulo.CurrentRow.DataBoundItem;
             frmAgregarArticulo modificar = new frmAgregarArticulo(seleccionado);
@@ -115,25 +120,62 @@ namespace App_Final
             }
         }
 
+        private bool validarFiltro()
+        {
+            if(cboxCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione el campo a filtrar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true;
+            }
+            if(cboxCriterio.SelectedIndex < 0 && !string.IsNullOrWhiteSpace(txtFiltroAvanzado.Text.Trim()))
+            {
+                MessageBox.Show("Seleccione el criterio a filtrar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true;
+            }
+            if (cboxCampo.SelectedItem.ToString() == "Código")
+            {
+               if(string.IsNullOrEmpty(txtFiltroAvanzado.Text.Trim()))
+               {
+                    MessageBox.Show("El filtro no puede estar vacio para el campo 'Código'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return true;
+               }
+            }
+            else if(cboxCampo.SelectedItem.ToString() == "Nombre")
+            {
+                if(string.IsNullOrEmpty(txtFiltroAvanzado.Text.Trim()))
+                {
+                    MessageBox.Show("El filtro no puede estar vacio para el campo 'Nombre'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return true;
+                }
+            }
+            else if(cboxCampo.SelectedItem.ToString() == "Descripción")
+            {
+                if(string.IsNullOrEmpty(txtFiltroAvanzado.Text.Trim()))
+                {
+                    MessageBox.Show("El filtro no puede estar vacio para el campo 'Descripción'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return true;
+                }
+            }
+            return false;    
+        }
+
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
+                if (validarFiltro())
+                    return;
                 string campo = cboxCampo.SelectedItem.ToString();
                 string criterio = cboxCriterio.SelectedItem.ToString();
-                string filtro = txtFiltroAvanzado.Text;
+                string filtro = txtFiltroAvanzado.Text.Trim();
                 dgvArticulo.DataSource = negocio.filtrar(campo, criterio, filtro);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error al filtrar los articulos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void txtFiltro_KeyPress(object sender, KeyPressEventArgs e)
-        {
         }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
@@ -141,7 +183,7 @@ namespace App_Final
             List<Articulo> listaFiltrada;
             string filtro = txtFiltro.Text;
 
-            if (filtro.Length >= 3)
+            if (filtro.Length >= 2)
                 listaFiltrada = listaArticulo.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()) || x.Codigo.ToUpper().Contains(filtro.ToUpper()) || x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
             else
                 listaFiltrada = listaArticulo;
@@ -155,7 +197,7 @@ namespace App_Final
         {
             string opcion = cboxCampo.SelectedItem.ToString();
             cboxCriterio.Items.Clear();
-            if (opcion == "Codigo" || opcion == "Nombre" || opcion == "Descripción")
+            if (opcion == "Código" || opcion == "Nombre" || opcion == "Descripción")
             {
                 cboxCriterio.Items.Add("Comienza con");
                 cboxCriterio.Items.Add("Termina con");

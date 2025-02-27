@@ -85,8 +85,8 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvArticulo.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvArticulo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -113,7 +113,7 @@
             // pboxArticulo
             // 
             this.pboxArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pboxArticulo.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pboxArticulo.BackColor = System.Drawing.SystemColors.Window;
             this.pboxArticulo.Location = new System.Drawing.Point(1238, 125);
             this.pboxArticulo.Name = "pboxArticulo";
             this.pboxArticulo.Size = new System.Drawing.Size(272, 399);
@@ -173,7 +173,7 @@
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblFiltro.Location = new System.Drawing.Point(535, 87);
+            this.lblFiltro.Location = new System.Drawing.Point(656, 87);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(137, 25);
             this.lblFiltro.TabIndex = 6;
@@ -181,15 +181,14 @@
             // 
             // txtFiltro
             // 
-            this.txtFiltro.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtFiltro.BackColor = System.Drawing.SystemColors.Window;
             this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltro.Location = new System.Drawing.Point(678, 87);
+            this.txtFiltro.Location = new System.Drawing.Point(799, 84);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(433, 28);
             this.txtFiltro.TabIndex = 0;
             this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
-            this.txtFiltro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFiltro_KeyPress);
             // 
             // btnFiltrar
             // 
@@ -198,9 +197,9 @@
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrar.Font = new System.Drawing.Font("Century Schoolbook", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.btnFiltrar.Location = new System.Drawing.Point(1238, 574);
+            this.btnFiltrar.Location = new System.Drawing.Point(1238, 568);
             this.btnFiltrar.Name = "btnFiltrar";
-            this.btnFiltrar.Size = new System.Drawing.Size(115, 33);
+            this.btnFiltrar.Size = new System.Drawing.Size(115, 39);
             this.btnFiltrar.TabIndex = 4;
             this.btnFiltrar.Text = "Buscar";
             this.btnFiltrar.UseVisualStyleBackColor = true;
@@ -247,7 +246,7 @@
             // 
             // cboxCampo
             // 
-            this.cboxCampo.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.cboxCampo.BackColor = System.Drawing.Color.SteelBlue;
             this.cboxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCampo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCampo.FormattingEnabled = true;
@@ -260,7 +259,7 @@
             // cboxCriterio
             // 
             this.cboxCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxCriterio.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.cboxCriterio.BackColor = System.Drawing.Color.SteelBlue;
             this.cboxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCriterio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCriterio.FormattingEnabled = true;
@@ -271,7 +270,7 @@
             // 
             // txtFiltroAvanzado
             // 
-            this.txtFiltroAvanzado.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtFiltroAvanzado.BackColor = System.Drawing.SystemColors.Window;
             this.txtFiltroAvanzado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltroAvanzado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFiltroAvanzado.Location = new System.Drawing.Point(755, 576);
