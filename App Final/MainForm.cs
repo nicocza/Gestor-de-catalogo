@@ -96,6 +96,11 @@ namespace App_Final
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if(dgvArticulo.CurrentRow == null)
+            {
+                MessageBox.Show("No hay articulo seleccionado para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             eliminar();
         }
 

@@ -106,7 +106,7 @@
             this.dgvArticulo.RowHeadersWidth = 51;
             this.dgvArticulo.RowTemplate.Height = 24;
             this.dgvArticulo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulo.Size = new System.Drawing.Size(1220, 399);
+            this.dgvArticulo.Size = new System.Drawing.Size(1236, 399);
             this.dgvArticulo.TabIndex = 1;
             this.dgvArticulo.SelectionChanged += new System.EventHandler(this.dgvArticulo_SelectionChanged);
             // 
@@ -114,7 +114,7 @@
             // 
             this.pboxArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pboxArticulo.BackColor = System.Drawing.SystemColors.Window;
-            this.pboxArticulo.Location = new System.Drawing.Point(1238, 125);
+            this.pboxArticulo.Location = new System.Drawing.Point(1254, 125);
             this.pboxArticulo.Name = "pboxArticulo";
             this.pboxArticulo.Size = new System.Drawing.Size(272, 399);
             this.pboxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,7 +186,7 @@
             this.txtFiltro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFiltro.Location = new System.Drawing.Point(799, 84);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(433, 28);
+            this.txtFiltro.Size = new System.Drawing.Size(449, 28);
             this.txtFiltro.TabIndex = 0;
             this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
             // 
@@ -197,7 +197,7 @@
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrar.Font = new System.Drawing.Font("Century Schoolbook", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.btnFiltrar.Location = new System.Drawing.Point(1238, 568);
+            this.btnFiltrar.Location = new System.Drawing.Point(1254, 574);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(115, 39);
             this.btnFiltrar.TabIndex = 4;
@@ -211,7 +211,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.label1.Location = new System.Drawing.Point(673, 575);
+            this.label1.Location = new System.Drawing.Point(689, 581);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 9;
@@ -224,7 +224,7 @@
             this.lblCampo.AutoSize = true;
             this.lblCampo.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCampo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblCampo.Location = new System.Drawing.Point(673, 536);
+            this.lblCampo.Location = new System.Drawing.Point(689, 542);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(76, 25);
             this.lblCampo.TabIndex = 10;
@@ -237,7 +237,7 @@
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCriterio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblCriterio.Location = new System.Drawing.Point(959, 536);
+            this.lblCriterio.Location = new System.Drawing.Point(975, 542);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(84, 25);
             this.lblCriterio.TabIndex = 11;
@@ -250,7 +250,7 @@
             this.cboxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCampo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCampo.FormattingEnabled = true;
-            this.cboxCampo.Location = new System.Drawing.Point(755, 534);
+            this.cboxCampo.Location = new System.Drawing.Point(771, 540);
             this.cboxCampo.Name = "cboxCampo";
             this.cboxCampo.Size = new System.Drawing.Size(183, 31);
             this.cboxCampo.TabIndex = 1;
@@ -263,7 +263,7 @@
             this.cboxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCriterio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCriterio.FormattingEnabled = true;
-            this.cboxCriterio.Location = new System.Drawing.Point(1049, 534);
+            this.cboxCriterio.Location = new System.Drawing.Point(1065, 540);
             this.cboxCriterio.Name = "cboxCriterio";
             this.cboxCriterio.Size = new System.Drawing.Size(183, 31);
             this.cboxCriterio.TabIndex = 2;
@@ -273,7 +273,7 @@
             this.txtFiltroAvanzado.BackColor = System.Drawing.SystemColors.Window;
             this.txtFiltroAvanzado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltroAvanzado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltroAvanzado.Location = new System.Drawing.Point(755, 576);
+            this.txtFiltroAvanzado.Location = new System.Drawing.Point(771, 582);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(477, 28);
             this.txtFiltroAvanzado.TabIndex = 3;
