@@ -47,6 +47,7 @@
             this.cboxCampo = new System.Windows.Forms.ComboBox();
             this.cboxCriterio = new System.Windows.Forms.ComboBox();
             this.txtFiltroAvanzado = new System.Windows.Forms.TextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArticulo)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Century Schoolbook", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Window;
             this.lblTitulo.Location = new System.Drawing.Point(5, 75);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(284, 39);
@@ -106,15 +107,15 @@
             this.dgvArticulo.RowHeadersWidth = 51;
             this.dgvArticulo.RowTemplate.Height = 24;
             this.dgvArticulo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvArticulo.Size = new System.Drawing.Size(1236, 399);
+            this.dgvArticulo.Size = new System.Drawing.Size(1205, 399);
             this.dgvArticulo.TabIndex = 1;
             this.dgvArticulo.SelectionChanged += new System.EventHandler(this.dgvArticulo_SelectionChanged);
             // 
             // pboxArticulo
             // 
             this.pboxArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pboxArticulo.BackColor = System.Drawing.SystemColors.Window;
-            this.pboxArticulo.Location = new System.Drawing.Point(1254, 125);
+            this.pboxArticulo.BackColor = System.Drawing.Color.White;
+            this.pboxArticulo.Location = new System.Drawing.Point(1223, 125);
             this.pboxArticulo.Name = "pboxArticulo";
             this.pboxArticulo.Size = new System.Drawing.Size(272, 399);
             this.pboxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,11 +125,11 @@
             // btnAgregar
             // 
             this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnAgregar.FlatAppearance.BorderSize = 2;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Silver;
             this.btnAgregar.Location = new System.Drawing.Point(12, 530);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(164, 77);
@@ -140,11 +141,11 @@
             // btnModificar
             // 
             this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnModificar.FlatAppearance.BorderSize = 2;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnModificar.ForeColor = System.Drawing.Color.Silver;
             this.btnModificar.Location = new System.Drawing.Point(182, 530);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(164, 77);
@@ -155,11 +156,11 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnEliminar.FlatAppearance.BorderSize = 2;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Silver;
             this.btnEliminar.Location = new System.Drawing.Point(352, 530);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(164, 77);
@@ -172,8 +173,8 @@
             // 
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFiltro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblFiltro.Location = new System.Drawing.Point(656, 87);
+            this.lblFiltro.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblFiltro.Location = new System.Drawing.Point(625, 89);
             this.lblFiltro.Name = "lblFiltro";
             this.lblFiltro.Size = new System.Drawing.Size(137, 25);
             this.lblFiltro.TabIndex = 6;
@@ -181,10 +182,11 @@
             // 
             // txtFiltro
             // 
-            this.txtFiltro.BackColor = System.Drawing.SystemColors.Window;
+            this.txtFiltro.BackColor = System.Drawing.Color.Silver;
             this.txtFiltro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltro.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltro.Location = new System.Drawing.Point(799, 84);
+            this.txtFiltro.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtFiltro.Location = new System.Drawing.Point(768, 86);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(449, 28);
             this.txtFiltro.TabIndex = 0;
@@ -192,12 +194,12 @@
             // 
             // btnFiltrar
             // 
-            this.btnFiltrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnFiltrar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnFiltrar.FlatAppearance.BorderSize = 2;
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrar.Font = new System.Drawing.Font("Century Schoolbook", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.btnFiltrar.Location = new System.Drawing.Point(1254, 574);
+            this.btnFiltrar.ForeColor = System.Drawing.Color.Silver;
+            this.btnFiltrar.Location = new System.Drawing.Point(1223, 564);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(115, 39);
             this.btnFiltrar.TabIndex = 4;
@@ -210,8 +212,8 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.label1.Location = new System.Drawing.Point(689, 581);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(658, 571);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.TabIndex = 9;
@@ -223,8 +225,8 @@
             this.lblCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCampo.AutoSize = true;
             this.lblCampo.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCampo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblCampo.Location = new System.Drawing.Point(689, 542);
+            this.lblCampo.ForeColor = System.Drawing.Color.White;
+            this.lblCampo.Location = new System.Drawing.Point(658, 532);
             this.lblCampo.Name = "lblCampo";
             this.lblCampo.Size = new System.Drawing.Size(76, 25);
             this.lblCampo.TabIndex = 10;
@@ -236,8 +238,8 @@
             this.lblCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCriterio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
-            this.lblCriterio.Location = new System.Drawing.Point(975, 542);
+            this.lblCriterio.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblCriterio.Location = new System.Drawing.Point(944, 532);
             this.lblCriterio.Name = "lblCriterio";
             this.lblCriterio.Size = new System.Drawing.Size(84, 25);
             this.lblCriterio.TabIndex = 11;
@@ -246,11 +248,11 @@
             // 
             // cboxCampo
             // 
-            this.cboxCampo.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboxCampo.BackColor = System.Drawing.Color.Silver;
             this.cboxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCampo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCampo.FormattingEnabled = true;
-            this.cboxCampo.Location = new System.Drawing.Point(771, 540);
+            this.cboxCampo.Location = new System.Drawing.Point(740, 530);
             this.cboxCampo.Name = "cboxCampo";
             this.cboxCampo.Size = new System.Drawing.Size(183, 31);
             this.cboxCampo.TabIndex = 1;
@@ -259,24 +261,40 @@
             // cboxCriterio
             // 
             this.cboxCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxCriterio.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboxCriterio.BackColor = System.Drawing.Color.Silver;
             this.cboxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCriterio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxCriterio.FormattingEnabled = true;
-            this.cboxCriterio.Location = new System.Drawing.Point(1065, 540);
+            this.cboxCriterio.Location = new System.Drawing.Point(1034, 530);
             this.cboxCriterio.Name = "cboxCriterio";
             this.cboxCriterio.Size = new System.Drawing.Size(183, 31);
             this.cboxCriterio.TabIndex = 2;
             // 
             // txtFiltroAvanzado
             // 
-            this.txtFiltroAvanzado.BackColor = System.Drawing.SystemColors.Window;
+            this.txtFiltroAvanzado.BackColor = System.Drawing.Color.Silver;
             this.txtFiltroAvanzado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFiltroAvanzado.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltroAvanzado.Location = new System.Drawing.Point(771, 582);
+            this.txtFiltroAvanzado.Location = new System.Drawing.Point(740, 572);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(477, 28);
             this.txtFiltroAvanzado.TabIndex = 3;
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnLimpiar.FlatAppearance.BorderSize = 2;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Schoolbook", 10.2F, System.Drawing.FontStyle.Italic);
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Silver;
+            this.btnLimpiar.Location = new System.Drawing.Point(1344, 565);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(115, 39);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // MainForm
             // 
@@ -284,6 +302,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1740, 642);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtFiltroAvanzado);
             this.Controls.Add(this.cboxCriterio);
             this.Controls.Add(this.cboxCampo);
@@ -332,6 +351,7 @@
         private System.Windows.Forms.ComboBox cboxCampo;
         private System.Windows.Forms.ComboBox cboxCriterio;
         private System.Windows.Forms.TextBox txtFiltroAvanzado;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 

@@ -58,7 +58,7 @@
             this.lblCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblCodigo.ForeColor = System.Drawing.SystemColors.Window;
             this.lblCodigo.Location = new System.Drawing.Point(87, 64);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(104, 34);
@@ -71,7 +71,7 @@
             this.lblNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.Window;
             this.lblNombre.Location = new System.Drawing.Point(87, 118);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(117, 34);
@@ -84,7 +84,7 @@
             this.lblMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblMarca.ForeColor = System.Drawing.SystemColors.Window;
             this.lblMarca.Location = new System.Drawing.Point(87, 177);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(97, 34);
@@ -97,7 +97,7 @@
             this.lblCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblCategoria.ForeColor = System.Drawing.SystemColors.Window;
             this.lblCategoria.Location = new System.Drawing.Point(87, 234);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(139, 34);
@@ -110,7 +110,7 @@
             this.lblUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUrlImagen.AutoSize = true;
             this.lblUrlImagen.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUrlImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblUrlImagen.ForeColor = System.Drawing.SystemColors.Window;
             this.lblUrlImagen.Location = new System.Drawing.Point(87, 290);
             this.lblUrlImagen.Name = "lblUrlImagen";
             this.lblUrlImagen.Size = new System.Drawing.Size(163, 34);
@@ -123,7 +123,7 @@
             this.lblPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblPrecio.ForeColor = System.Drawing.SystemColors.Window;
             this.lblPrecio.Location = new System.Drawing.Point(87, 347);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(93, 34);
@@ -136,7 +136,7 @@
             this.lblDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Century Schoolbook", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.lblDescripcion.ForeColor = System.Drawing.SystemColors.Window;
             this.lblDescripcion.Location = new System.Drawing.Point(87, 409);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(162, 34);
@@ -147,6 +147,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCodigo.BackColor = System.Drawing.Color.Silver;
             this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(325, 66);
@@ -157,6 +158,7 @@
             // txtNombre
             // 
             this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNombre.BackColor = System.Drawing.Color.Silver;
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(325, 120);
@@ -167,6 +169,7 @@
             // TxtUrlImagen
             // 
             this.TxtUrlImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtUrlImagen.BackColor = System.Drawing.Color.Silver;
             this.TxtUrlImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUrlImagen.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUrlImagen.Location = new System.Drawing.Point(326, 292);
@@ -178,6 +181,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPrecio.BackColor = System.Drawing.Color.Silver;
             this.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPrecio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(326, 349);
@@ -187,6 +191,7 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.Silver;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(93, 460);
@@ -198,10 +203,10 @@
             // cboxMarca
             // 
             this.cboxMarca.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxMarca.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboxMarca.BackColor = System.Drawing.Color.Silver;
             this.cboxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxMarca.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxMarca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
+            this.cboxMarca.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cboxMarca.FormattingEnabled = true;
             this.cboxMarca.Location = new System.Drawing.Point(326, 180);
             this.cboxMarca.Name = "cboxMarca";
@@ -211,10 +216,10 @@
             // cboxCategoria
             // 
             this.cboxCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cboxCategoria.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboxCategoria.BackColor = System.Drawing.Color.Silver;
             this.cboxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboxCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboxCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
+            this.cboxCategoria.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cboxCategoria.FormattingEnabled = true;
             this.cboxCategoria.Location = new System.Drawing.Point(326, 237);
             this.cboxCategoria.Name = "cboxCategoria";
@@ -224,7 +229,7 @@
             // pboxArticulo
             // 
             this.pboxArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pboxArticulo.BackColor = System.Drawing.SystemColors.Window;
+            this.pboxArticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(44)))), ((int)(((byte)(60)))));
             this.pboxArticulo.Location = new System.Drawing.Point(634, 71);
             this.pboxArticulo.Name = "pboxArticulo";
             this.pboxArticulo.Size = new System.Drawing.Size(322, 495);
@@ -235,11 +240,11 @@
             // btnAceptar
             // 
             this.btnAceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnAceptar.FlatAppearance.BorderSize = 2;
             this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAceptar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnAceptar.ForeColor = System.Drawing.Color.Silver;
             this.btnAceptar.Location = new System.Drawing.Point(164, 604);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(156, 54);
@@ -250,11 +255,11 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnCancelar.FlatAppearance.BorderSize = 2;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(223)))), ((int)(((byte)(24)))));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Silver;
             this.btnCancelar.Location = new System.Drawing.Point(360, 604);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(156, 54);
@@ -266,6 +271,7 @@
             // btnAgregarImagen
             // 
             this.btnAgregarImagen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAgregarImagen.BackColor = System.Drawing.Color.Silver;
             this.btnAgregarImagen.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarImagen.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnAgregarImagen.Location = new System.Drawing.Point(600, 292);
@@ -273,7 +279,7 @@
             this.btnAgregarImagen.Size = new System.Drawing.Size(28, 32);
             this.btnAgregarImagen.TabIndex = 5;
             this.btnAgregarImagen.Text = "+";
-            this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.UseVisualStyleBackColor = false;
             this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
             // 
             // lblCodigoError

@@ -188,7 +188,7 @@ namespace App_Final
             List<Articulo> listaFiltrada;
             string filtro = txtFiltro.Text;
 
-            if (filtro.Length >= 2)
+            if (filtro.Length >= 3)
                 listaFiltrada = listaArticulo.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()) || x.Codigo.ToUpper().Contains(filtro.ToUpper()) || x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
             else
                 listaFiltrada = listaArticulo;
@@ -210,6 +210,10 @@ namespace App_Final
             }
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            cargar();
+        }
     }
 }
 

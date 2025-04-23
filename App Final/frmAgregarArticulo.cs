@@ -137,7 +137,6 @@ namespace App_Final
             {
                 TxtUrlImagen.Text = archivo.FileName;
                 cargarImagen(archivo.FileName);
-
             }
         }
 
