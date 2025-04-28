@@ -160,7 +160,7 @@ namespace App_Final
             }
             if(string.IsNullOrEmpty(txtPrecio.Text) || !decimal.TryParse(txtPrecio.Text, out _)) 
             {
-                lblPrecioError.Text = "Este campo es obligatoio, solo números";
+                lblPrecioError.Text = "Este campo es obligatorio, solo números";
                 valido = false;
             }
             return valido;
