@@ -299,7 +299,7 @@
             this.lblNombreError.AutoSize = true;
             this.lblNombreError.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreError.ForeColor = System.Drawing.Color.Red;
-            this.lblNombreError.Location = new System.Drawing.Point(322, 155);
+            this.lblNombreError.Location = new System.Drawing.Point(319, 154);
             this.lblNombreError.Name = "lblNombreError";
             this.lblNombreError.Size = new System.Drawing.Size(0, 20);
             this.lblNombreError.TabIndex = 17;
